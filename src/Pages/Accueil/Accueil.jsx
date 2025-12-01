@@ -1,5 +1,5 @@
 import "./Accueil.scss"
-import Banner from "../../Components/Banner"
+import Banner from "../../Components/Banner/Banner"
 import bannerAcc from "../../Assests/bannerAcc.png"
 
 function Accueil () {

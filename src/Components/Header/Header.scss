@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+
+    &_link {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 24px;
+        color: black;
+        padding-left: 57px;
+        text-decoration: none;
+    }
+
+    &_link--active {
+        text-decoration: underline;
+    }
+
+}
