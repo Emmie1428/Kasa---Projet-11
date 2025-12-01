@@ -1,1 +1,19 @@
-/*# sourceMappingURL=Error.css.map */
+.error {
+  font-family: Montserrat;
+  color: #ff6060;
+  flex-direction: column;
+  display: grid;
+  justify-items: center;
+  gap: 139px;
+  padding: 94px 0 139px;
+}
+.error h2 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: 500;
+}
+.error_link {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}/*# sourceMappingURL=Error.css.map */
