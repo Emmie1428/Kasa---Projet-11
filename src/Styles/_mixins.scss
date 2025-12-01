@@ -4,3 +4,10 @@
     align-items: center;
     justify-self: anchor-center;
 }
+
+@mixin h3 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
