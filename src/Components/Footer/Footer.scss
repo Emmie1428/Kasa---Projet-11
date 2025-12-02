@@ -8,9 +8,7 @@
     flex-direction: column;
 
     h2{
-        font-family: Montserrat;
-        color: white;
-        font-size: 24px;
+        @include h2;
         font-weight: 400;
     }
 

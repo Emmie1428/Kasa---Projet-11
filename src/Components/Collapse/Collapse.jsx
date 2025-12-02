@@ -7,14 +7,20 @@ function Collapse ({titre, children}) {
     const [isOpen, setIsOpen] = useState(false)
 
     return isOpen? (
-        <div className="sectionValeur">
-            <h3 onClick={()=> setIsOpen(false)} className="button">{titre}<img src={flechehaut} alt="Ouvrir" className="fleche"/></h3>
-            <p>{children}</p>
+        <div className="valeurs">
+            <h2 onClick={()=> 
+                setIsOpen(false)} className="valeurs_titre">
+                    {titre}<img src={flechebas} alt="Fermer" className="valeurs_fleche"/>
+            </h2>
+            <p className="valeurs_description">{children}</p>
         </div>
     ) :(
-        <div>
-            <h3 onClick={()=> setIsOpen(true)} className="button">{titre}<img src={flechebas} alt="Fermer" className="fleche"/></h3>
-            </div>
+        <div className="valeurs">
+            <h2 onClick={()=> 
+                setIsOpen(true)} className="valeurs_titre">
+                    {titre}<img src={flechehaut} alt="Ouvrir" className="valeurs_fleche"/>
+            </h2>
+        </div>
     )
 }
 

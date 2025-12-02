@@ -27,7 +27,9 @@
     }
 
     &_title {
-        @include h3;       
+        @include h3;
+        color: white;
+        font-style: bold;       
         position: absolute; 
         bottom: 10px;  
         left: 10px;        

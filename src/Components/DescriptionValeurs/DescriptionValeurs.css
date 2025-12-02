@@ -1,0 +1,9 @@
+.containerValeurs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: anchor-center;
+  flex-direction: column;
+  margin: 38px 0;
+  gap: 30px;
+}/*# sourceMappingURL=DescriptionValeurs.css.map */

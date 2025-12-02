@@ -1,15 +1,31 @@
-.button {
-    height: 30px;
-    width: 30px;
-    background-color: green;
-}
+@use "../../Styles/_mixins.scss" as *;
 
-.text {
-    background-color: blueviolet;
-}
+.valeurs {
+    width: 1023px;
 
-.fleche {
-    color: red;
-    height: 20px;
-    width: 20px;
+    &_titre {
+        @include h2;
+        font-weight: bold;
+        padding: 10px 15px 10px 20px;
+        margin: 0;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #FF6060;
+    }
+
+    &_fleche {
+        height: 28px;
+        width: 28px;
+    }
+
+    &_description {
+        background-color: #F6F6F6;
+        @include h3;
+        color: black;
+        list-style: none;
+        height: fit-content;
+        padding: 20px;
+        margin: 0;
+    }
 }

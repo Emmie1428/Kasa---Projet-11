@@ -1,0 +1,8 @@
+@use "../../Styles/mixins" as *;
+
+.containerValeurs {
+    @include center;
+    flex-direction: column;
+    margin: 38px 0;
+    gap: 30px;
+}
