@@ -2,7 +2,7 @@ import "./Accueil.scss"
 import Banner from "../../Components/Banner/Banner"
 import bannerAcc from "../../Assests/bannerAcc.png"
 import {listeLogement} from "../../Assests/Annonces.json"
-import SingleCard from "../../Components/Card/Card"
+import SingleCard from "../../Components/SingleCard/SingleCard"
 import {NavLink} from "react-router-dom"
 
 function Accueil () {

@@ -1,4 +1,4 @@
-
+import Carrousel  from "../../Components/Carrousel/Carrousel"
 import {listeLogement} from "../../Assests/Annonces.json"
 import {useParams, useNavigate} from "react-router-dom"
 
@@ -14,7 +14,9 @@ function Logement () {
         }
 
     return ( <div>
-        Test logement
+        <Carrousel 
+            key={logementActuel.id}
+            pictures={logementActuel.pictures}/>
     </div>
     
     )

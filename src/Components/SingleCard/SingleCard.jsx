@@ -1,4 +1,4 @@
-import "./Card.scss"
+import "./SingleCard.scss"
 
 function SingleCard ({title, cover}) {
     return(<div className="card">
