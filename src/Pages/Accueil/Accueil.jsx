@@ -3,6 +3,7 @@ import Banner from "../../Components/Banner/Banner"
 import bannerAcc from "../../Assests/bannerAcc.png"
 import {listeLogement} from "../../Assests/Annonces.json"
 import SingleCard from "../../Components/Card/Card"
+import {NavLink} from "react-router-dom"
 
 function Accueil () {
     return (<main className="accueil">
@@ -10,12 +11,14 @@ function Accueil () {
         slogan="Chez vous, partout et ailleurs"/>
         <div className="cards">
             {listeLogement.map((logement) => (
-            <SingleCard 
-                key={logement.id}
-                title={logement.title}
-                cover={logement.cover} />
+                <NavLink to={`/logement/${logement.id}`} key={logement.id} >
+                    <SingleCard 
+                        title={logement.title}
+                        cover={logement.cover}
+                    />
+               </NavLink>
             ))}
-        </div> 
+        </div>
     </main>)
 }
 
