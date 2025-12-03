@@ -13,15 +13,18 @@ function Carrousel ({pictures}) {
         setIndex(index === pictures.length - 1 ? 0 : index + 1)
     }
 
-    return ( <div className="carrousel">
+    const singlePicture = pictures.length === 1
+
+    return (<div className="carrousel">
                 <img src={pictures[index]} alt="Photo du logement" className="carrousel_picture" />
+            
+            {!singlePicture && (
                 <div className="carrousel_control">
                     <img src={flecheRetour} alt="Image précédente" onClick={retour} className="carrousel_control_fleche"/>
                     <p className="carrousel_control_index">{`${index + 1}/${pictures.length}`}</p>
                     <img src={flecheSuivant} alt="Image suivante" onClick={suivant} className="carrousel_control_fleche"/>
-               </div>
-        </div>
-    )
+               </div>)}
+            </div>)
 }
 
 export default Carrousel
