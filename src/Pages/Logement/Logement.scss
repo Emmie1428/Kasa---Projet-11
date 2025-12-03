@@ -3,4 +3,5 @@
 .logement {
     padding: 0 100px 50px;
     @include center;
+    flex-wrap: wrap;
 }
