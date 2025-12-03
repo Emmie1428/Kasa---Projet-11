@@ -1,10 +1,39 @@
-.carrousel_picture {
-    height: 200px;
-    width: 300px;
-    place-self: center;
-}
+@use "../../Styles/mixins" as *;
 
-.carrousel_fleche {
-    color: red;
-    background-color: red;
+.carrousel {
+    height: 415px;
+    width: 1240px;
+    border-radius: 25px;
+    position: relative;
+
+    &_picture {
+        border-radius: 25px;
+        height: -webkit-fill-available;
+        width: -webkit-fill-available;
+        object-fit: cover;
+        position: absolute;
+    }
+    
+    &_control {
+        display: flex;
+        position: relative;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        justify-content: space-between;
+        align-items: center;
+
+        &_fleche {
+            height: 79px;
+            padding: 0 23px;
+        }
+
+        &_index {
+            @include h3;
+            color: white;
+            font-weight: 500;
+            align-self: end;
+        }
+
+    }
+    
 }

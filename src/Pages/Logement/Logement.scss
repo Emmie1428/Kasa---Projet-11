@@ -1,0 +1,6 @@
+@use "../../Styles/_mixins.scss" as *;
+
+.logement {
+    padding: 0 100px 50px;
+    @include center;
+}

@@ -1,6 +1,7 @@
 import Carrousel  from "../../Components/Carrousel/Carrousel"
 import {listeLogement} from "../../Assests/Annonces.json"
 import {useParams, useNavigate} from "react-router-dom"
+import "./Logement.scss"
 
 function Logement () {
    const {id} = useParams()
@@ -13,7 +14,7 @@ function Logement () {
             return null
         }
 
-    return ( <div>
+    return ( <div className="logement">
         <Carrousel 
             key={logementActuel.id}
             pictures={logementActuel.pictures}/>

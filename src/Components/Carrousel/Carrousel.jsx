@@ -15,10 +15,11 @@ function Carrousel ({pictures}) {
 
     return ( <div className="carrousel">
                 <img src={pictures[index]} alt="Photo du logement" className="carrousel_picture" />
-                    <img src={flecheRetour} alt="Image précédente" onClick={retour} className="carrousel_fleche"/>
-                    <p className="carrousel_index">{`${index + 1}/${pictures.length}`}</p>
-                    <img src={flecheSuivant} alt="Image suivante" onClick={suivant} className="carrousel_fleche"/>
-               
+                <div className="carrousel_control">
+                    <img src={flecheRetour} alt="Image précédente" onClick={retour} className="carrousel_control_fleche"/>
+                    <p className="carrousel_control_index">{`${index + 1}/${pictures.length}`}</p>
+                    <img src={flecheSuivant} alt="Image suivante" onClick={suivant} className="carrousel_control_fleche"/>
+               </div>
         </div>
     )
 }
