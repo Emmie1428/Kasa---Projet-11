@@ -4,4 +4,26 @@
     padding: 0 100px 50px;
     @include center;
     flex-wrap: wrap;
+    width: -webkit-fill-available;
+
+    &_collapses {
+        display: flex;
+        gap:76px;
+        width: -webkit-fill-available;
+        padding-top: 5px;
+
+        &_list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+
+    .collapse {
+         &_titre {
+            font-size: 18px;
+            border-radius: 10px;
+         }
+    }
+
 }

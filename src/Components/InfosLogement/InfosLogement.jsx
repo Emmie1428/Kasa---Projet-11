@@ -14,6 +14,7 @@ function InfosLogement ({title, host, location, tags, index}) {
             {tags.map(tag => (
                 <li key={`${tag}-${index}`} className="info_tags_individuel">{tag}</li>))}
         </ul>
+       
     </div>)
 }
 

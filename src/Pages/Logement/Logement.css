@@ -5,4 +5,20 @@
   align-items: center;
   justify-self: anchor-center;
   flex-wrap: wrap;
+  width: -webkit-fill-available;
+}
+.logement_collapses {
+  display: flex;
+  gap: 76px;
+  width: -webkit-fill-available;
+  padding-top: 5px;
+}
+.logement_collapses_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.logement .collapse_titre {
+  font-size: 18px;
+  border-radius: 10px;
 }/*# sourceMappingURL=Logement.css.map */

@@ -1,7 +1,7 @@
-.valeurs {
+.collapse {
   width: 1023px;
 }
-.valeurs_titre {
+.collapse_titre {
   font-family: Montserrat;
   color: white;
   font-size: 24px;
@@ -12,12 +12,13 @@
   display: flex;
   justify-content: space-between;
   background-color: #FF6060;
+  align-items: center;
 }
-.valeurs_fleche {
+.collapse_fleche {
   height: 28px;
   width: 28px;
 }
-.valeurs_description {
+.collapse_contenu {
   background-color: #F6F6F6;
   font-family: Montserrat;
   font-size: 18px;

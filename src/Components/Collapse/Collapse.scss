@@ -1,6 +1,6 @@
 @use "../../Styles/_mixins.scss" as *;
 
-.valeurs {
+.collapse {
     width: 1023px;
 
     &_titre {
@@ -12,6 +12,7 @@
         display: flex;
         justify-content: space-between;
         background-color: #FF6060;
+        align-items: center;
     }
 
     &_fleche {
@@ -19,7 +20,7 @@
         width: 28px;
     }
 
-    &_description {
+    &_contenu {
         background-color: #F6F6F6;
         @include h3;
         color: black;
