@@ -1,8 +1,9 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 import Accueil from '../Pages/Accueil/Accueil'
 import Logement from "../Pages/Logement/Logement"
 import APropos from '../Pages/APropos/APropos'
 import Error from '../Pages/Error/Error'
+
 
 function Router() {
   return (

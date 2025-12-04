@@ -1,6 +1,6 @@
 import Carrousel  from "../../Components/Carrousel/Carrousel"
 import {listeLogement} from "../../Assests/Annonces.json"
-import {useParams, useNavigate} from "react-router-dom"
+import {useParams, Navigate} from "react-router-dom"
 import "./Logement.scss"
 import InfoLogement from "../../Components/InfosLogement/InfosLogement"
 import Evaluation from "../../Components/Evaluation/Evaluation"
@@ -8,14 +8,14 @@ import Collapse from "../../Components/Collapse/Collapse"
 
 function Logement () {
    const {id} = useParams()
-   const redirection = useNavigate()
+   
 
    const logementActuel = listeLogement.find(logement => 
         logement.id === id)
         if(!logementActuel) {
-            redirection("*")
-            return null
-        }
+            return (<Navigate to="*" />
+           
+        )}
 
     return (<div className="logement">
                 <Carrousel 
