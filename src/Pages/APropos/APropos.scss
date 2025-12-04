@@ -1,0 +1,9 @@
+@use "../../Styles/_mixins.scss" as *;
+
+.a-propos {
+    padding: 0 100px;
+
+    @include mobile {
+           padding: 0 20px;
+        }
+}

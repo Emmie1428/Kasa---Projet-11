@@ -10,6 +10,11 @@
     h2{
         @include h2;
         font-weight: 400;
+        width: 30%;
+
+        @include mobile {
+          font-size: 12px;
+        }
     }
 
 }

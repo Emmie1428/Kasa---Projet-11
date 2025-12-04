@@ -3,6 +3,10 @@
 .collapse {
     width: 1023px;
 
+    @include mobile {
+           width: -webkit-fill-available;
+    }
+
     &_titre {
         @include h2;
         font-weight: bold;
@@ -13,6 +17,11 @@
         justify-content: space-between;
         background-color: #FF6060;
         align-items: center;
+
+         @include mobile {
+           font-size: 13px;
+           padding: 5px 10px;
+        }
     }
 
     &_fleche {
@@ -28,5 +37,10 @@
         height: fit-content;
         padding: 20px;
         margin: 0;
+
+        @include mobile {
+           font-size: 11px;
+           padding: 10px;
+        }
     }
 }

@@ -1,9 +1,22 @@
+@use "../../Styles/_mixins.scss" as *;
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:  white;
     padding: 45px 100px 50px;
+
+    @include mobile {
+           padding: 20px 20px 27px;
+           width: max-content;
+        }
+
+    &_logo {
+        @include mobile {
+            width: 145px;
+        }
+    }
 
     &_link {
         font-family: Montserrat;
@@ -12,6 +25,12 @@
         color: black;
         padding-left: 57px;
         text-decoration: none;
+
+        @include mobile {
+            font-size: 14px;
+            text-transform: uppercase;
+            padding-left: 26px;
+        }
     }
 
     &_link--active {

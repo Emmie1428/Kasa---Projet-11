@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-self: anchor-center;
 }
 
 @mixin h2 {
@@ -14,4 +13,10 @@
 @mixin h3 {
     font-family: Montserrat;
     font-size: 18px;
+}
+
+@mixin mobile {
+  @media (min-width: 375px) and (max-width: 768px) {
+    @content;
+  }
 }

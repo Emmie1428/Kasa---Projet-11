@@ -1,5 +1,11 @@
+@use "../../Styles/_mixins.scss" as *;
+
 .accueil {
     padding: 0 100px;
+
+    @include mobile {
+           padding: 0 20px;
+        }
 }
 
 .cards {
@@ -11,4 +17,11 @@
     gap: 60px;
     padding: 56px 50px;
     margin: 46px 0 50px;
+
+    @include mobile {
+           padding: 22px 0 27px;
+           margin: 0;
+           background-color: white;
+           gap: 20px;
+        }
 }

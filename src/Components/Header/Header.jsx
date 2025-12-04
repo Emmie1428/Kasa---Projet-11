@@ -4,7 +4,7 @@ import "./Header.scss"
 
 function Header () {
     return (<nav className="header">
-                <img src={logo} alt="Logo Kasa"/>
+                <NavLink to="/" ><img src={logo} alt="Logo Kasa" className="header_logo"/></NavLink>
                 <div>
                     <NavLink to="/" className={({ isActive }) => isActive ? "header_link header_link--active" : "header_link"}
                     end>Accueil</NavLink>

@@ -5,4 +5,10 @@
     flex-direction: column;
     margin: 38px 0;
     gap: 30px;
+
+    @include mobile {
+           margin: 19px 0;
+           gap: 20px;
+           padding: 0;
+        }
 }
