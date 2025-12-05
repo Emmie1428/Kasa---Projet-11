@@ -1,3 +1,5 @@
+@use "../../Styles/_mixins.scss" as *;
+
 .error{
     font-family: Montserrat;
     color: #ff6060; 
@@ -7,15 +9,45 @@
     gap: 139px;
     padding: 94px 0 139px;
 
-    h2 {
+    @include mobile {
+           width: -webkit-fill-available;
+           gap: 113px;
+        }
+
+    &_404 {
+
+        @include mobile {
+           width: 198px;
+        }
+
+    }
+    &_texte {
         font-size: 36px;
         margin: 0;
         font-weight: 500;
+
+        @include mobile {
+           font-size: 18px;
+           text-align: center;
+        }
+
+        &_break{
+            display: none;
+
+            @include mobile {
+                display: block;
+            }
+        }
     }
 
     &_link {
         font-size: 18px;
         color: black;
         font-weight: 500;
+
+        @include mobile {
+           font-size: 14px;
+        }
     }
+
 }
