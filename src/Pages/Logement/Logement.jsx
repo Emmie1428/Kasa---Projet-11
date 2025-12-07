@@ -3,7 +3,6 @@ import {listeLogement} from "../../Assests/Annonces.json"
 import {useParams, Navigate} from "react-router-dom"
 import "./Logement.scss"
 import InfoLogement from "../../Components/InfosLogement/InfosLogement"
-import Evaluation from "../../Components/Evaluation/Evaluation"
 import Collapse from "../../Components/Collapse/Collapse"
 
 function Logement () {
@@ -29,12 +28,9 @@ function Logement () {
                     host={logementActuel.host}
                     tags={logementActuel.tags}
                     equipement={logementActuel.equipements}
-                />
-                <Evaluation
-                    key={logementActuel.rating}
                     rating={logementActuel.rating}
                 />
-               <div className="logement_collapses">
+                <div className="logement_collapses">
                     <Collapse 
                         key={logementActuel.description}
                         titre="Description">

@@ -6,12 +6,20 @@
     border-radius: 25px;
     position: relative;
 
+    @include mobile {
+        height: 225px;   
+    }
+
     &_picture {
         border-radius: 25px;
         height: -webkit-fill-available;
         width: -webkit-fill-available;
         object-fit: cover;
         position: absolute;
+
+        @include mobile {
+            border-radius: 10px;
+        }
     }
     
     &_control {
@@ -25,6 +33,11 @@
         &_fleche {
             height: 79px;
             padding: 0 23px;
+
+            @include mobile {
+                height: 24px;
+                padding: 10px;
+            }
         }
 
         &_index {
@@ -32,6 +45,10 @@
             color: white;
             font-weight: 500;
             align-self: end;
+
+            @include mobile {
+                display: none;
+            }
         }
 
     }

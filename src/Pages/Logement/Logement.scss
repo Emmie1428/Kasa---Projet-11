@@ -6,11 +6,21 @@
     flex-wrap: wrap;
     width: -webkit-fill-available;
 
+    @include mobile {
+        padding: 0 20px 27px;
+    }
+
     &_collapses {
         display: flex;
         gap:76px;
         width: -webkit-fill-available;
-        padding-top: 5px;
+        padding-top: 15px;
+
+        @include mobile {
+            padding-top: 13px;
+            flex-direction: column;
+            gap: 20px;
+        }
 
         &_list {
             margin: 0;
@@ -20,10 +30,17 @@
     }
 
     .collapse {
-         &_titre {
+        &_titre {
             font-size: 18px;
             border-radius: 10px;
-         }
+
+            @include mobile {
+                font-size: 13px;
+                border-radius: 5px;
+            }
+        }
+
+        
     }
 
 }

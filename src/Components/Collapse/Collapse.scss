@@ -34,6 +34,11 @@
         &.rotate{
             transform: rotate(-180deg);
         }
+
+        @include mobile {
+           width: 16px;
+           height: 16px;
+        }  
     }
 
     &_contenu {
@@ -41,6 +46,7 @@
         @include h3;
         color: black;
         list-style: none;
+        border-radius: 0 0 5px 5px;
         height: fit-content;
         margin: 0;
         padding: 0 20px;

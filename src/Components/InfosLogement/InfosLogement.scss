@@ -1,51 +1,93 @@
 @use "../../Styles/mixins" as *;
 
 .info {
-    display: contents;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 
+        "contenant hote"
+        "tags rating";
+    gap: 10px 20px;
+    align-items: center;
+    width: -webkit-fill-available;
 
-    &_titre{
-        font-family: Montserrat;
-        font-size: 36px;    
-        font-weight: 500;
-        color: #FF6060;
-        margin-bottom: 5px;
-        width: fit-content;
+    @include mobile {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "contenant contenant"
+            "tags tags"
+            "rating hote";
+        gap: 10px;
     }
 
-    &_localisation {
-        @include h3;
-        font-weight: 500;
-        margin: 0;
+    &_contenant {
+        grid-area: contenant;
+
+        &_titre {
+            font-family: Montserrat;
+            font-size: 36px;    
+            font-weight: 500;
+            color: #FF6060;
+            margin-bottom: 5px;
+
+            @include mobile {
+                font-size: 18px;
+            }
+        }
+
+        &_localisation {
+            @include h3;
+            font-weight: 500;
+            margin: 0;
+
+            @include mobile {
+                font-size: 14px;
+            }
+        }
     }
 
     &_hote {
-        margin-inline-start: auto;
+        grid-area: hote;
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @include mobile {
+            justify-content: flex-end;
+        }
 
         &_nom {
             @include h3;
             font-weight: 500;
             color: #FF6060;
             margin: 0 10px 0 0;
-            width: min-content;
-            display: flex;
             text-align: end;
-            align-items: center;
+            width: min-content;
+
+            @include mobile {
+                font-size: 12px;
+            }
         }
 
         &_avatar {
             width: 64px;
             height: 64px;
-            border-radius: 360px;
+            border-radius: 50%;
+
+            @include mobile {
+                width: 32px;
+                height: 32px;
+            }
         }
     }
 
     &_tags {
+        grid-area: tags;
         display: flex;
-        width: fit-content;
+        flex-wrap: wrap;
         padding: 0;
-        flex: auto;
-        
+        margin: 0;
+        gap: 10px;
+
         &_individuel {
             min-width: 105px;
             height: 22px;
@@ -56,9 +98,34 @@
             font-weight: 500;
             background-color: #FF6060;
             border-radius: 10px;
-            margin-right: 10px;
-            padding: 0 10px 3px;  
+            padding: 0 10px;  
             @include center;
+
+            @include mobile {
+                min-width: 85px;
+                font-size: 10px;
+                height: 18px;
+                padding: 0;
+            }
+        }
+    }
+
+    &_evaluation {
+        grid-area: rating;
+        display: flex;
+        justify-content: flex-end;
+
+        @include mobile {
+            justify-content: flex-start;
+        }
+
+        &_star {
+            margin-left: 12px;
+           
+            @include mobile {
+                width: 13px;
+                margin: 0 7px 0;
+            } 
         }
     }
 }
