@@ -28,6 +28,7 @@
     &_fleche {
         height: 28px;
         width: 28px;
+        cursor: pointer;
         transition: transform .4s ease;
 
         &.rotate{
@@ -45,11 +46,12 @@
         padding: 0 20px;
         max-height: 0;
         overflow: hidden;
-        transition: max-height .4s, padding .4s;
-        transition-timing-function: cubic-bezier(.51,.5,.98,1.03);
+        transition: max-height .25s, padding 0.25s ease-in-out;
+        
 
         @include mobile {
            font-size: 11px;
+           padding: 0 10px;
         }
 
         &.down {
