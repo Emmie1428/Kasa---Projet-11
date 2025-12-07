@@ -5,7 +5,7 @@ import "./DescriptionValeurs.scss"
 
 function DescriptionValeurs () {
     return (<div>
-                <ul class="containerValeurs">
+                <ul className="containerValeurs">
                     {aPropos.map((valeur) => (
                     <Collapse 
                         key={valeur.titre}

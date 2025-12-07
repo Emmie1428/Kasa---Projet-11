@@ -2,7 +2,8 @@
 
 .collapse {
     width: 1023px;
-
+    height: fit-content;
+    
     @include mobile {
            width: -webkit-fill-available;
     }
@@ -21,12 +22,17 @@
          @include mobile {
            font-size: 13px;
            padding: 5px 10px;
-        }
+        }  
     }
 
     &_fleche {
         height: 28px;
         width: 28px;
+        transition: transform .4s ease;
+
+        &.rotate{
+            transform: rotate(-180deg);
+        }
     }
 
     &_contenu {
@@ -35,12 +41,24 @@
         color: black;
         list-style: none;
         height: fit-content;
-        padding: 20px;
         margin: 0;
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .4s, padding .4s;
+        transition-timing-function: cubic-bezier(.51,.5,.98,1.03);
 
         @include mobile {
            font-size: 11px;
-           padding: 10px;
         }
+
+        &.down {
+            max-height: 500px;
+            padding: 20px;
+
+            @include mobile {
+            padding: 10px;
+            }
+        }    
     }
 }
