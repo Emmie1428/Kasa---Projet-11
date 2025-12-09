@@ -4,8 +4,8 @@
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-areas: 
-        "contenant hote"
-        "tags rating";
+        "texte hote"
+        "tags evaluation";
     gap: 10px 20px;
     align-items: center;
     width: -webkit-fill-available;
@@ -13,14 +13,14 @@
     @include mobile {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-            "contenant contenant"
+            "texte texte"
             "tags tags"
-            "rating hote";
+            "evaluation hote";
         gap: 10px;
     }
 
     &_contenant {
-        grid-area: contenant;
+        grid-area: texte;
 
         &_titre {
             font-family: Montserrat;
@@ -111,7 +111,7 @@
     }
 
     &_evaluation {
-        grid-area: rating;
+        grid-area: evaluation;
         display: flex;
         justify-content: flex-end;
 

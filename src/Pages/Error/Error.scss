@@ -1,6 +1,6 @@
 @use "../../Styles/_mixins.scss" as *;
 
-.error{
+.error {
     font-family: Montserrat;
     color: #ff6060; 
     flex-direction: column;
@@ -10,17 +10,16 @@
     padding: 94px 0 139px;
 
     @include mobile {
-           width: -webkit-fill-available;
-           gap: 113px;
-        }
+        width: -webkit-fill-available;
+        gap: 113px;
+    }
 
     &_404 {
-
         @include mobile {
            width: 198px;
         }
-
     }
+    
     &_texte {
         font-size: 36px;
         margin: 0;

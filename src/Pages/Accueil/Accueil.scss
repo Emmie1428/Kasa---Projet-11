@@ -4,8 +4,8 @@
     padding: 0 100px;
 
     @include mobile {
-           padding: 0 20px;
-        }
+        padding: 0 20px;
+    }
 }
 
 .cards {
@@ -20,9 +20,9 @@
     justify-content: space-evenly;
 
     @include mobile {
-           padding: 22px 0 27px;
-           margin: 0;
-           background-color: white;
-           gap: 20px;
-        }
+        padding: 22px 0 27px;
+        margin: 0;
+        background-color: white;
+        gap: 20px;
+    }
 }

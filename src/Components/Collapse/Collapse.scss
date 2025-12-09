@@ -5,7 +5,7 @@
     height: fit-content;
     
     @include mobile {
-           width: -webkit-fill-available;
+        width: -webkit-fill-available;
     }
 
     &_titre {
@@ -52,9 +52,8 @@
         padding: 0 20px;
         max-height: 0;
         overflow: hidden;
-        transition: max-height .25s, padding 0.25s ease-in-out;
+        transition: max-height .25s, padding .25s ease-in-out;
         
-
         @include mobile {
            font-size: 11px;
            padding: 0 10px;
@@ -65,7 +64,7 @@
             padding: 20px;
 
             @include mobile {
-            padding: 10px;
+                padding: 10px;
             }
         }    
     }

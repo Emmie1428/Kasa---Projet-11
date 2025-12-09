@@ -6,7 +6,7 @@ function Footer () {
                 <img src={logoBlanc} alt="Logo Kasa" />
                 <h2>© 2020 Kasa. All rights reserved</h2>
             </div>
-            )
+    )
 }
 
 export default Footer

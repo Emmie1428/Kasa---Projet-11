@@ -4,7 +4,8 @@ function SingleCard ({title, cover}) {
     return(<div className="card">
                 <img src={cover} alt={title} className="card_cover"/>
                 <h3 className="card_title">{title}</h3>
-            </div>)
-            }
+            </div>
+    )
+}
 
 export default SingleCard

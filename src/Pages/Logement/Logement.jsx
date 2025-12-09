@@ -8,13 +8,11 @@ import Collapse from "../../Components/Collapse/Collapse"
 function Logement () {
    const {id} = useParams()
    
-
    const logementActuel = listeLogement.find(logement => 
         logement.id === id)
         if(!logementActuel) {
-            return (<Navigate to="*" />
-           
-        )}
+            return (<Navigate to="*" />)
+        }
 
     return (<div className="logement">
                 <Carrousel 

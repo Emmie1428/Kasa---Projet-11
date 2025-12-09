@@ -5,11 +5,12 @@ import "./APropos.scss"
 
 function APropos () {
     return (<div className="a-propos">
-        <Banner backgroundImage={bannerAPropos}
-        slogan="" 
-        imageOpacity={0.7}/>
-        <DescriptionValeurs />
-    </div>)
+                <Banner backgroundImage={bannerAPropos}
+                    slogan="" 
+                    imageOpacity={0.7}/>
+                <DescriptionValeurs />
+            </div>
+    )
 }
 
 export default APropos

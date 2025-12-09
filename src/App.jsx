@@ -5,14 +5,13 @@ import Router from './Components/Router'
 import './App.scss'
 
 function App() {
-  return ( 
-  <div className="app">
-    <BrowserRouter>
-      <Header />
-      <Router />
-      <Footer />
-    </BrowserRouter>
-  </div>
+  return (<div className="app">
+            <BrowserRouter>
+              <Header />
+              <Router />
+              <Footer />
+            </BrowserRouter>
+           </div>
   )
 }
 

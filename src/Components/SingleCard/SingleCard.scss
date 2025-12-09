@@ -9,9 +9,9 @@
     cursor: pointer;
 
     @include mobile {
-          width: 335px;
-          height: 225px;
-        }
+        width: 335px;
+        height: 225px;
+    }
 
     &_cover {
         position: absolute;       

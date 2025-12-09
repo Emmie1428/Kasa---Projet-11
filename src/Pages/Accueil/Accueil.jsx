@@ -7,19 +7,19 @@ import {NavLink} from "react-router-dom"
 
 function Accueil () {
     return (<main className="accueil">
-        <Banner backgroundImage={bannerAcc}
-        slogan="Chez vous, partout et ailleurs"/>
-        <div className="cards">
-            {listeLogement.map((logement) => (
-                <NavLink to={`/logement/${logement.id}`} key={logement.id} >
-                    <SingleCard 
-                        title={logement.title}
-                        cover={logement.cover}
-                    />
-               </NavLink>
-            ))}
-        </div>
-    </main>)
+                <Banner backgroundImage={bannerAcc}
+                slogan="Chez vous, partout et ailleurs"/>
+                <div className="cards">
+                    {listeLogement.map((logement) => (
+                    <NavLink to={`/logement/${logement.id}`} key={logement.id} >
+                        <SingleCard 
+                            title={logement.title}
+                            cover={logement.cover}
+                        />
+                    </NavLink>))}
+                </div>
+            </main>
+    )
 }
 
 export default Accueil

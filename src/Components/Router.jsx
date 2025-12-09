@@ -4,7 +4,6 @@ import Logement from "../Pages/Logement/Logement"
 import APropos from '../Pages/APropos/APropos'
 import Error from '../Pages/Error/Error'
 
-
 function Router() {
   return (
     <Routes>
